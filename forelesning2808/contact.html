@@ -33,6 +33,46 @@
             <section>
                 <h2>kontakt oss</h2>
             </section>
+            <section>
+                <h2>Ta kontakt med oss i dag</h2>
+                <form method="post" action="#">
+                    <label for="navn">navn:</label>
+                    <input type="text" name="navn" placeholder="ola nordmann" id="navn" maxlength="45" required>
+                    <label for="epost">
+                        epost:
+                        <input type="email" name="email" placeholder="Eksempel@hiof.no" id="epost" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </label>
+                    <label>
+                        emne:
+                        <input type="text" name="emne" placeholder="hva handler det om">
+                    </label>
+                    <label>
+                        Melding:
+                        <textarea name="melding" required></textarea>
+                    <label>
+                    nei
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                    ja
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                    kanskje
+                        <input type="radio" name="valg">
+                    </label>
+                    
+                    <label>
+                        favoritt mat
+                        <select name="favmat">
+                            <option value="pizza">pizza</option>
+                            <option value="sushi">Sushi</option>
+                            <option value="kebab">kebab</option>
+                        </select>
+                    </label>
+                    <input type="submit" value="send melding">
+                </form>
+            </section>
         </main>
         <footer id="bunn">
             2024 MikkelBS
