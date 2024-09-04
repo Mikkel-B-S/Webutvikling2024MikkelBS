@@ -38,9 +38,9 @@
                 <form method="post" action="#">
                     <label for="navn">navn:</label>
                     <input type="text" name="navn" placeholder="ola nordmann" id="navn" maxlength="45" required>
-                    <label for="epost">
+                    <label>
                         epost:
-                        <input type="email" name="email" placeholder="Eksempel@hiof.no" id="epost" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                        <input type="email" name="email" placeholder="Eksempel@hiof.no"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                     </label>
                     <label>
                         emne:
@@ -49,6 +49,7 @@
                     <label>
                         Melding:
                         <textarea name="melding" required></textarea>
+                    </label>
                     <label>
                     nei
                         <input type="radio" name="valg">
