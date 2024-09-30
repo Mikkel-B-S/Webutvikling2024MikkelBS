@@ -1,0 +1,54 @@
+
+*{
+    box-sizing: border-box;
+}
+header{
+    background-image: url(../img/Rotte.jpg);
+    background-size: cover;
+    h1{
+        text-align: center;
+        color: #888888;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        padding: 1rem;
+        margin: 0;
+        flex-wrap: wrap;
+        a {
+            text-decoration: none;
+            color: #000;
+             
+        } 
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+main{
+    max-width: 70%;
+    min-width: 400px;
+    section{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    article{
+        max-width: 250px;
+        min-width: 30px;
+        width: 100%;
+        box-shadow: 13px 9px 20px 0px #bbbbbb;
+        margin: 15px;
+        border-radius: 4px;
+        padding: 1rem;
+    }
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+}
