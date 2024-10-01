@@ -1,0 +1,105 @@
+main{
+    background-image: url(../sprites/bakgrunn.jpg);
+    height: 500px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-size: contain;
+    position: relative;
+}
+
+@keyframes MarioWalk{
+    from{background-image: url(../sprites/staa.png);}
+    to{background-image: url(../sprites/lopende.png);}
+}
+
+@keyframes MarioDead{
+    0%{
+        background-image: url(../sprites/dead.png);
+        bottom: 53px;
+        left: 800px;
+        transform: rotate(0);
+    }
+    
+    100%{
+        bottom: 150px;
+        transform: rotate(-45) scale(1,8);
+        background-image: url(../sprites/dead.png);
+    }
+
+}
+
+@keyframes GombaWalk{
+    from{background-image: url(../sprites/sopp.png);}
+    to{background-image: url(../sprites/sopp-kopi.png);}
+}
+
+@keyframes MarioMove{
+    0%{
+        left: 0;
+        bottom: 53px;
+    }
+
+    20%{
+        left: 407px;
+        bottom: 53px;
+    }
+
+    30%{
+        left: 407px;
+        bottom: 117px;
+    }
+
+    40%{left: 407px;
+        bottom: 53px;
+    }
+
+    80%{
+        bottom: 53px;
+        left: 575px;
+    }
+
+    90%{
+       
+        bottom: 200px;
+    }
+
+    100%{
+        left: 800px;
+        bottom: 53px;
+    }
+}
+
+@keyframes GombaMove{
+    from {right: 0px;}
+    to{right: 347px;}
+}
+
+#supermario{
+    /* background-image: url(../sprites/staa.png); */
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    animation-name: MarioWalk, MarioMove, MarioDead;
+    animation-iteration-count: 12, 1, 1;
+    animation-duration: 0.5s, 6s, 0.8s;
+    animation-fill-mode: none, forwards, forwards;
+    animation-delay: 0s, 0s, 6s;
+    z-index: 999;
+}
+
+#gomba{
+    /* background-image: url(../sprites/sopp.png); */
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    right: 0;
+    animation-name: GombaWalk, GombaMove;
+    animation-iteration-count: infinite, infinite;
+    animation-duration: 0.5s, 7;
+    animation-direction:normal, alternate;
+}
