@@ -32,17 +32,17 @@ main{
     section{
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        display: flex;
         gap: 1rem;
     }
     article{
-        max-width: 250px;
-        min-width: 30px;
+        max-width: 170px;
+        min-width: 120px;
         width: 100%;
         box-shadow: 13px 9px 20px 0px #bbbbbb;
         margin: 15px;
-        border-radius: 4px;
         padding: 1rem;
+        flex-wrap: wrap;
     }
 }
 
