@@ -52,7 +52,7 @@ main h2{
 main article{
     width: 30%;
     min-width: 250%
-    flex-grow: 1;
+    flex-groW: 1;
 }
 
 aside{
