@@ -7,35 +7,29 @@
         <title>zalando lite | sko</title>
     </head>
     <body>
-        <header>
-            <img id="main-logo" src="img/Zalando_201x_logo.svg.png" alt="nettsted logo">
-            <nav class="flex-space-b">
-                <ul class="flex-menu">
-                    <li><a href="#">nyheter</a></li>
-                    <li><a href="#">nordisk stil</a></li>
-                    <li><a href="#">klær</a></li>
-                    <li><a href="#">sko</a></li>
-                    <li><a href="#">accessories</a></li>
-                    <li><a href="#">streetwear</a></li>
-                    <li><a href="#">sport</a></li>
-                    <li><a href="#">designer</a></li>
-                    <li><a href="#" id="outlet">outlet</a></li>
-                </ul>
-                <form>
-                    <label>søk</label>
-                    <input type="search" placeholder="søk" id="search">
-                    <input type="submit" value="søk">
-                </form>
-            </nav>
-        </header>
-        <main>
-            <nav>
-                <ul>
-                    <li><a href="#">herre</a></li>
-                </ul>
-            </nav>
-            <h1>sko til herre</h1>
-            <aside>
+        <div id="grid-container">
+            <header id="global-header">
+                <img id="main-logo" src="img/Zalando_201x_logo.svg.png" alt="nettsted logo">
+                <nav class="flex-space-b">
+                    <ul class="flex-menu">
+                        <li><a href="#">nyheter</a></li>
+                        <li><a href="#">nordisk stil</a></li>
+                        <li><a href="#">klær</a></li>
+                        <li><a href="#">sko</a></li>
+                        <li><a href="#">accessories</a></li>
+                        <li><a href="#">streetwear</a></li>
+                        <li><a href="#">sport</a></li>
+                        <li><a href="#">designer</a></li>
+                        <li><a href="#" id="outlet">outlet</a></li>
+                    </ul>
+                    <form>
+                        <label>søk</label>
+                        <input type="search" placeholder="søk" id="search">
+                        <input type="submit" value="søk">
+                    </form>
+                </nav>
+            </header>
+            <aside id="category-menu">
                 <nav>
                     <ul>
                         <li>sko
@@ -49,82 +43,91 @@
                     </ul>
                 </nav>
             </aside>
-            <section>
-                <h2>produkter</h2>
-                <form>
-                    <select name="brand">
-                        <option value="all">all</option>
-                        <option value="adidas">adidas</option>
-                        <option value="aldo">Aldo</option>
-                        <option value="ARKK">ARKK</option>
-                        <option value="Bianco">Bianco</option>
-                    </select>
-                    <select name="sort">
-                        <option value="new">nyeste</option>
-                        <option value="low">lavest pris</option>
-                        <option value="high">høyeste pris</option>
-                    </select>
-                </form>
+            <main>
+                <nav>
+                    <ul>
+                        <li><a href="#">herre</a></li>
+                        <li>sko</li>
+                    </ul>
+                </nav>
+                <h1>sko til herre</h1>
                 <section>
-                    <h3>sko?</h3>
-                    <article>
-                        <img src="img/produktbilde.webp" alt="idk sko">
-                        <a href="#">sån kul sko</a>
-                        <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
-                        <p>500 cigaretter</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.webp" alt="idk sko">
-                        <a href="#">sån kul sko</a>
-                        <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
-                        <p>500 cigaretter</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.webp" alt="idk sko">
-                        <a href="#">sån kul sko</a>
-                        <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
-                        <p>500 cigaretter</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.webp" alt="idk sko">
-                        <a href="#">sån kul sko</a>
-                        <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
-                        <p>500 cigaretter</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.webp" alt="idk sko">
-                        <a href="#">sån kul sko</a>
-                        <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
-                        <p>500 cigaretter</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.webp" alt="idk sko">
-                        <a href="#">sån kul sko</a>
-                        <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
-                        <p>500 cigaretter</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.webp" alt="idk sko">
-                        <a href="#">sån kul sko</a>
-                        <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
-                        <p>500 cigaretter</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.webp" alt="idk sko">
-                        <a href="#">sån kul sko</a>
-                        <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
-                        <p>500 cigaretter</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.webp" alt="idk sko">
-                        <a href="#">sån kul sko</a>
-                        <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
-                        <p>500 cigaretter</p>
-                    </article>
+                    <h2>produkter</h2>
+                    <form>
+                        <select name="brand">
+                            <option value="all">all</option>
+                            <option value="adidas">adidas</option>
+                            <option value="aldo">Aldo</option>
+                            <option value="ARKK">ARKK</option>
+                            <option value="Bianco">Bianco</option>
+                        </select>
+                        <select name="sort">
+                            <option value="new">nyeste</option>
+                            <option value="low">lavest pris</option>
+                            <option value="high">høyeste pris</option>
+                        </select>
+                    </form>
+                    <section class="flex-space-b">
+                        <h3>sko?</h3>
+                        <article class="product-card">
+                            <img src="img/produktbilde.webp" alt="idk sko">
+                            <a href="#">sån kul sko</a>
+                            <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
+                            <p>500 cigaretter</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/produktbilde.webp" alt="idk sko">
+                            <a href="#">sån kul sko</a>
+                            <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
+                            <p>500 cigaretter</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/produktbilde.webp" alt="idk sko">
+                            <a href="#">sån kul sko</a>
+                            <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
+                            <p>500 cigaretter</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/produktbilde.webp" alt="idk sko">
+                            <a href="#">sån kul sko</a>
+                            <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
+                            <p>500 cigaretter</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/produktbilde.webp" alt="idk sko">
+                            <a href="#">sån kul sko</a>
+                            <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
+                            <p>500 cigaretter</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/produktbilde.webp" alt="idk sko">
+                            <a href="#">sån kul sko</a>
+                            <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
+                            <p>500 cigaretter</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/produktbilde.webp" alt="idk sko">
+                            <a href="#">sån kul sko</a>
+                            <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
+                            <p>500 cigaretter</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/produktbilde.webp" alt="idk sko">
+                            <a href="#">sån kul sko</a>
+                            <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
+                            <p>500 cigaretter</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/produktbilde.webp" alt="idk sko">
+                            <a href="#">sån kul sko</a>
+                            <a href="#"><h3>en sko jeg ikke husker navnet på</h3></a>
+                            <p>500 cigaretter</p>
+                        </article>
+                    </section>
                 </section>
-            </section>
-        </main>
-        
-        <footer>zalando lite 2024</footer>
+            </main>
+            
+            <footer>zalando lite 2024</footer>
+        </div>
     </body>
 </html>
