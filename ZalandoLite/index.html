@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width. initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link href="ikoner/css/fontawesome.css" rel="stylesheet" />
+        <link href="ikoner/css/brands.css" rel="stylesheet" />
+        <link href="ikoner/css/solid.css" rel="stylesheet" />
         <title>zalando lite | forside</title>
     </head>
     <body>
@@ -11,7 +14,8 @@
             <header id="global-header">
                 <img id="main-logo" src="img/Zalando_201x_logo.svg.png" alt="nettsted logo">
                 <nav class="flex-space-b">
-                    <ul class="flex-menu">
+                    <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
+                    <ul class="flex-menu" id="menu">
                         <li><a href="#">nyheter</a></li>
                         <li><a href="#">nordisk stil</a></li>
                         <li><a href="#">klær</a></li>
@@ -97,5 +101,16 @@
             </main>
             <footer>zalando lite 2024</footer>
         </div>
+        <script>
+            let togglemenu = ()=>{
+                let x = document.getelementbyid("menu")
+                if(x.style.display === "flex"){
+                    x.style.display = "none"
+                }
+                else{
+                    x.style.display = "flex"
+                }
+            }
+        </script>
     </body>
 </html>
