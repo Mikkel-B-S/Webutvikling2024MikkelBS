@@ -102,15 +102,19 @@
             <footer>zalando lite 2024</footer>
         </div>
         <script>
-            let togglemenu = ()=>{
-                let x = document.getelementbyid("menu")
-                if(x.style.display === "flex"){
-                    x.style.display = "none"
-                }
-                else{
-                    x.style.display = "flex"
-                }
+            let toggleMenu = () => {
+            // Henter elementet med id 'menu' og lagrer det i variabelen x
+            let x = document.getElementById("menu");
+    
+            // Sjekker om elementets display-stil er satt til 'flex'
+            if (x.style.display === "flex") {
+                // Hvis display er 'flex', setter vi det til 'none' for å skjule menyen
+                x.style.display = "none";
+            } else {
+                // Hvis display ikke er 'flex', setter vi det til 'flex' for å vise menyen
+                x.style.display = "flex";
             }
+        }
         </script>
     </body>
 </html>
