@@ -1,11 +1,17 @@
 
-@use 'layout.scss';
-@use 'loginn.scss';
+@use 'layout';
+@use 'loginn';
+@use 'colors' as *;
+@use 'fonts' as *;
 
-
-
+*{
+    box-sizing: border-box;
+}
 body{
-    background-color: #770080;
+    background-color: $purple;
     height: 100hv;
+    font-family: $mainfont;
+    background-image: url(https://picsum.photos/2000/2000);
+    background-size: cover;
 }
 
