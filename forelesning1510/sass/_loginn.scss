@@ -2,22 +2,6 @@
 @use 'mixins' as *;
 @use 'design' as *;
 
-@mixin box($width, $height, $pad, $bradius){
-    width: 100%;
-    max-width: $width;
-    height: $height;
-    padding: $pad;
-    border-radius: $bradius;
-}
-
-@mixin flexbox($direction, $wrap, $gap, ){
-    display: flex;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
-    gap: $gap;
-}
-
-
 form{
     color: $black;
     @extend .blurred-effect;
@@ -30,6 +14,7 @@ form{
         background-color: $white;
         i{
             @include box(50px, 50px, 1rem, 100%);
+            display: flex;
             width: 50px;
             background-color: $offwhite;
             color: $white;
