@@ -1,3 +1,12 @@
 {
-    "editor.tabCompletion": "on"
+    "editor.tabCompletion": "on",
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css",
+            "savePathReplacementPairs": null
+        }
+    ]
 }

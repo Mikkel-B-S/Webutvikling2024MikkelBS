@@ -1,0 +1,24 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 3rem;
+  color: #353535;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+body {
+  background-color: #770080;
+  height: 100hv;
+}/*# sourceMappingURL=main.css.map */
