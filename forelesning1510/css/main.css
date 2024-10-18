@@ -42,6 +42,7 @@ form label i {
   height: 50px;
   padding: 1rem;
   border-radius: 100%;
+  display: flex;
   width: 50px;
   background-color: #c9b8c8;
   color: #ffffff;
