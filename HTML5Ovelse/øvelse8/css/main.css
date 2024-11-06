@@ -2,17 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap");
 #main-nav {
   position: fixed;
-  background-color: #42722a;
-  width: 70%;
-  left: 15%;
+  background-color: #26624b;
+  width: 85%;
+  align-items: center;
   bottom: 10px;
-  border-radius: 30px;
+  border-radius: 50px;
 }
 #main-nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
-  padding: 0;
+  justify-content: space-around;
+  padding: 1rem;
 }
 #main-nav ul li a {
   color: #ffffff;
